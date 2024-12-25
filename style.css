@@ -1,0 +1,111 @@
+* {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dark {
+    background-color: #111;
+    color: #eee;
+}
+button {
+    padding: 10px 20px;
+    margin: 5px 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+
+    border: 2px solid crimson;
+    background-color: crimson;
+    color: white;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: inherit;
+        color: crimson;
+
+        padding: 12px 24px;
+        margin: 3px 6px;
+    }
+    &:active {
+        transform: rotate(4deg);
+        opacity: 0.5;
+        background-color: crimson;
+        color: white;
+    }
+}
+button:disabled {
+    opacity: 0.5;
+    &:hover {
+        background-color: crimson;
+        color: white;
+
+        padding: 10px 20px;
+        margin: 5px 10px;
+    }
+    &:active {
+        transform: rotate(0deg);
+        opacity: 0.5;
+        background-color: crimson;
+        color: white;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    transition: all 0.5s;
+}
+.title {
+    font-size: 2.5rem;
+    margin-bottom: -10px;
+}
+.tomato {
+    margin: 30px;
+    font-size: 2.5rem;
+    color: white;
+
+    background-image: url('./assets/tomato.png');
+    height: 250px;
+    width: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.timer {
+    margin-top: 40px;
+    color: white;
+}
+
+.theme-toggle {
+    padding: 5px 10px;
+    margin: 25px 10px;
+    font-size: 0.75rem;
+    border-radius: 8px;
+    cursor: pointer;
+
+    border: 2px solid crimson;
+    background-color: inherit;
+    color: crimson;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: crimson;
+        color: white;
+
+        padding: 7px 14px;
+        margin: 23px 6px;
+    }
+    &:active {
+        transform: rotate(4deg);
+        opacity: 0.5;
+        background-color: inherit;
+        color: crimson;
+    }
+}
